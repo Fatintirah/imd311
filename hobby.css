@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  padding: 10px;
+  background: Bisque;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: Bisque;
+}
+
+.header h1 {
+  font-size: 90px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: RebeccaPurple;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: LightYellow;
+  text-align: center;
+  padding: 20px 18px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: WhiteSmoke;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: Bisque;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: Bisque;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: Bisque;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 200%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 200%;
+  }
+}
+
+h2{
+  color: violet;
+  font-family: cooper black;
+  font-size: 300%;
+  text-align:center;
+}
+
+h3{
+  color: black;
+  font-family: arial;
+  font-size: 200%;
+  text-align:justify;
+}
+
+li {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: arial;
+}
+
+p {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: arial;
+}
